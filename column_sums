@@ -1,0 +1,12 @@
+# 多维列表操作示例
+matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+
+# 计算每列的和
+column_sums = [0] * len(matrix[0])
+for row in matrix:
+    for i in range(len(row)):
+        column_sums[i] += row[i]
+
+# 打印每列的和
+for sum in column_sums:
+    print(sum)
